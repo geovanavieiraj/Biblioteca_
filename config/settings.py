@@ -44,9 +44,9 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.contrib.auth.context_processors.request',
-                'django.contrib.messages.context_processors.auth',
-'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',  
+                'django.contrib.auth.context_processors.auth', 
+                'django.contrib.messages.context_processors.messages',
             ],
         },
     },
@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postegresql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'biblioteca_a',
         'USER': 'postgres',
         'PASSWORD':'123456',

@@ -1,5 +1,5 @@
 from django.db import models
-class Cidade(models.Models):
+class Cidade(models.Model):
     nome = models.CharField(max_length=100, verbose_name="nome da cidade")
     uf =  models.CharField(max_length=2, verbose_name="UF")
     def __str__(self):
